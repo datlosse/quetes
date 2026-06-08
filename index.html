@@ -19,20 +19,12 @@
 <body>
   <div id="root"></div>
   <script>
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = App;
-var _react = _interopRequireWildcard(require("react"));
-function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, "default": e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t2 in e) "default" !== _t2 && {}.hasOwnProperty.call(e, _t2) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t2)) && (i.get || i.set) ? o(f, _t2, i) : f[_t2] = e[_t2]); return f; })(e, t); }
-function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
+function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i.return) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
 function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
@@ -40,7 +32,7 @@ function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArra
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
 function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = !0, u = !1; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = !0, o = r; }, f: function f() { try { a || null == t["return"] || t["return"](); } finally { if (u) throw o; } } }; }
+function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = !0, u = !1; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = !0, o = r; }, f: function f() { try { a || null == t.return || t.return(); } finally { if (u) throw o; } } }; }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -48,6 +40,8 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+import React, { useState, useEffect, useCallback, useRef } from "react";
+
 // ═══════════════════════════════════════
 // CONSTANTS
 // ═══════════════════════════════════════
@@ -1562,7 +1556,7 @@ function _saveState() {
 function Tag(_ref) {
   var children = _ref.children,
     color = _ref.color;
-  return /*#__PURE__*/_react["default"].createElement("span", {
+  return /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -1577,7 +1571,7 @@ function Tag(_ref) {
 }
 function Pill(_ref2) {
   var children = _ref2.children;
-  return /*#__PURE__*/_react["default"].createElement("span", {
+  return /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -1624,7 +1618,7 @@ function Btn(_ref3) {
     border: "#facc15",
     color: "#facc15"
   };
-  return /*#__PURE__*/_react["default"].createElement("button", {
+  return /*#__PURE__*/React.createElement("button", {
     onClick: onClick,
     disabled: disabled,
     style: _objectSpread({
@@ -1649,7 +1643,7 @@ function TimerBar(_ref4) {
   var pct = _ref4.pct,
     color = _ref4.color;
   var c = pct > 80 ? "#f87171" : pct > 50 ? "#fb923c" : color || "#4ade80";
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       width: "100%",
       height: "3px",
@@ -1657,7 +1651,7 @@ function TimerBar(_ref4) {
       borderRadius: "2px",
       overflow: "hidden"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       width: "".concat(100 - pct, "%"),
       height: "100%",
@@ -1673,7 +1667,7 @@ function XPBar(_ref5) {
   var xpIn = _ref5.xpIn,
     xpNeeded = _ref5.xpNeeded;
   var pct = Math.min(100, xpIn / xpNeeded * 100);
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       width: "100%",
       height: "4px",
@@ -1681,7 +1675,7 @@ function XPBar(_ref5) {
       borderRadius: "2px",
       overflow: "hidden"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       width: "".concat(pct, "%"),
       height: "100%",
@@ -1700,34 +1694,34 @@ function DofusBadge(_ref6) {
     _ref6$unlocked = _ref6.unlocked,
     unlocked = _ref6$unlocked === void 0 ? false : _ref6$unlocked;
   var d = DOFUS[dofus] || DOFUS.emeraude;
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       position: "relative",
       width: size,
       height: size,
       flexShrink: 0
     }
-  }, /*#__PURE__*/_react["default"].createElement("svg", {
+  }, /*#__PURE__*/React.createElement("svg", {
     width: size,
     height: size,
     viewBox: "0 0 48 48",
     style: {
       filter: unlocked ? "drop-shadow(0 0 8px ".concat(d.color, ")") : "grayscale(1) opacity(0.3)"
     }
-  }, /*#__PURE__*/_react["default"].createElement("defs", null, /*#__PURE__*/_react["default"].createElement("radialGradient", {
+  }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("radialGradient", {
     id: "g_".concat(dofus),
     cx: "40%",
     cy: "35%",
     r: "60%"
-  }, /*#__PURE__*/_react["default"].createElement("stop", {
+  }, /*#__PURE__*/React.createElement("stop", {
     offset: "0%",
     stopColor: d.color,
     stopOpacity: "0.9"
-  }), /*#__PURE__*/_react["default"].createElement("stop", {
+  }), /*#__PURE__*/React.createElement("stop", {
     offset: "100%",
     stopColor: d.color,
     stopOpacity: "0.3"
-  }))), /*#__PURE__*/_react["default"].createElement("ellipse", {
+  }))), /*#__PURE__*/React.createElement("ellipse", {
     cx: "24",
     cy: "26",
     rx: "14",
@@ -1736,28 +1730,28 @@ function DofusBadge(_ref6) {
     stroke: d.color,
     strokeWidth: "1.5",
     strokeOpacity: "0.6"
-  }), /*#__PURE__*/_react["default"].createElement("ellipse", {
+  }), /*#__PURE__*/React.createElement("ellipse", {
     cx: "24",
     cy: "16",
     rx: "7",
     ry: "5",
     fill: d.color,
     fillOpacity: "0.5"
-  }), /*#__PURE__*/_react["default"].createElement("ellipse", {
+  }), /*#__PURE__*/React.createElement("ellipse", {
     cx: "20",
     cy: "22",
     rx: "3",
     ry: "4",
     fill: "white",
     fillOpacity: "0.15"
-  }), /*#__PURE__*/_react["default"].createElement("ellipse", {
+  }), /*#__PURE__*/React.createElement("ellipse", {
     cx: "19",
     cy: "21",
     rx: "1.5",
     ry: "2",
     fill: "white",
     fillOpacity: "0.3"
-  })), unlocked && /*#__PURE__*/_react["default"].createElement("div", {
+  })), unlocked && /*#__PURE__*/React.createElement("div", {
     style: {
       position: "absolute",
       bottom: -2,
@@ -1781,7 +1775,7 @@ function DofusBadge(_ref6) {
 function Notif(_ref7) {
   var notif = _ref7.notif,
     onDismiss = _ref7.onDismiss;
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     var t = setTimeout(onDismiss, 4000);
     return function () {
       return clearTimeout(t);
@@ -1795,7 +1789,7 @@ function Notif(_ref7) {
     levelup: "#fb923c"
   };
   var c = colors[notif.type] || "#facc15";
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     onClick: onDismiss,
     style: {
       position: "fixed",
@@ -1811,7 +1805,7 @@ function Notif(_ref7) {
       boxShadow: "0 8px 32px ".concat(c, "22"),
       animation: "slideIn 0.3s ease"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -1819,7 +1813,7 @@ function Notif(_ref7) {
       letterSpacing: "2px",
       marginBottom: "4px"
     }
-  }, notif.title), /*#__PURE__*/_react["default"].createElement("div", {
+  }, notif.title), /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: "13px",
       color: "rgba(255,255,255,0.8)",
@@ -1844,11 +1838,11 @@ function QuestCard(_ref8) {
     inventory = _ref8.inventory,
     _ref8$timerBonusPct = _ref8.timerBonusPct,
     timerBonusPct = _ref8$timerBonusPct === void 0 ? 0 : _ref8$timerBonusPct;
-  var _useState = (0, _react.useState)(Date.now()),
+  var _useState = useState(Date.now()),
     _useState2 = _slicedToArray(_useState, 2),
     now = _useState2[0],
     setNow = _useState2[1];
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     if (mode !== "active" || !quest.timerH) return;
     var t = setInterval(function () {
       return setNow(Date.now());
@@ -1864,7 +1858,7 @@ function QuestCard(_ref8) {
   var remMs = mode === "active" && quest.addedMs && quest.timerH ? timerRemainingMs(quest.addedMs, quest.timerH, timerBonusPct) : null;
   var pct = mode === "active" && quest.addedMs && quest.timerH ? timerPct(quest.addedMs, quest.timerH, timerBonusPct) : 0;
   var expired = remMs === 0;
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     onClick: mode === "select" ? onSelect : undefined,
     style: {
       background: selected ? "linear-gradient(135deg,rgba(30,30,40,0.9),#0f1117)" : "rgba(15,17,23,0.7)",
@@ -1878,7 +1872,7 @@ function QuestCard(_ref8) {
       position: "relative",
       overflow: "hidden"
     }
-  }, expired && /*#__PURE__*/_react["default"].createElement("div", {
+  }, expired && /*#__PURE__*/React.createElement("div", {
     style: {
       position: "absolute",
       top: 0,
@@ -1888,7 +1882,7 @@ function QuestCard(_ref8) {
       background: "#f87171",
       opacity: 0.6
     }
-  }), /*#__PURE__*/_react["default"].createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       justifyContent: "space-between",
@@ -1896,20 +1890,20 @@ function QuestCard(_ref8) {
       marginBottom: "8px",
       gap: "8px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "6px",
       flexWrap: "wrap",
       flex: 1
     }
-  }, /*#__PURE__*/_react["default"].createElement(Tag, {
+  }, /*#__PURE__*/React.createElement(Tag, {
     color: m.color
-  }, (quest.type || "?").toUpperCase()), quest.isZC && /*#__PURE__*/_react["default"].createElement(Tag, {
+  }, (quest.type || "?").toUpperCase()), quest.isZC && /*#__PURE__*/React.createElement(Tag, {
     color: "#fb923c"
-  }, "HORS ZC"), isDofusQ && /*#__PURE__*/_react["default"].createElement(Tag, {
+  }, "HORS ZC"), isDofusQ && /*#__PURE__*/React.createElement(Tag, {
     color: "#fbbf24"
-  }, "DOFUS")), mode === "select" && /*#__PURE__*/_react["default"].createElement("div", {
+  }, "DOFUS")), mode === "select" && /*#__PURE__*/React.createElement("div", {
     style: {
       width: "20px",
       height: "20px",
@@ -1921,33 +1915,33 @@ function QuestCard(_ref8) {
       alignItems: "center",
       justifyContent: "center"
     }
-  }, selected && /*#__PURE__*/_react["default"].createElement("span", {
+  }, selected && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       color: "#000",
       fontWeight: 700
     }
-  }, "\u2713")), mode === "active" && /*#__PURE__*/_react["default"].createElement("div", {
+  }, "\u2713")), mode === "active" && /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "5px",
       flexShrink: 0
     }
-  }, !isDofusQ && /*#__PURE__*/_react["default"].createElement(Btn, {
+  }, !isDofusQ && /*#__PURE__*/React.createElement(Btn, {
     small: true,
     variant: "ghost",
     onClick: function onClick() {
       return onUseItem && onUseItem(quest);
     }
-  }, "\uD83C\uDF92"), /*#__PURE__*/_react["default"].createElement(Btn, {
+  }, "\uD83C\uDF92"), /*#__PURE__*/React.createElement(Btn, {
     small: true,
     variant: "success",
     onClick: onComplete
-  }, "\u2713"), !isDofusQ && /*#__PURE__*/_react["default"].createElement(Btn, {
+  }, "\u2713"), !isDofusQ && /*#__PURE__*/React.createElement(Btn, {
     small: true,
     variant: "danger",
     onClick: onDelete
-  }, "\u2715"))), /*#__PURE__*/_react["default"].createElement("h3", {
+  }, "\u2715"))), /*#__PURE__*/React.createElement("h3", {
     style: {
       fontSize: "14px",
       fontFamily: "'Crimson Pro',Georgia,serif",
@@ -1956,7 +1950,7 @@ function QuestCard(_ref8) {
       margin: "0 0 5px",
       lineHeight: 1.3
     }
-  }, quest.title), /*#__PURE__*/_react["default"].createElement("p", {
+  }, quest.title), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: "12px",
       color: "rgba(240,237,232,0.5)",
@@ -1964,42 +1958,42 @@ function QuestCard(_ref8) {
       lineHeight: 1.5,
       fontFamily: "'Crimson Pro',Georgia,serif"
     }
-  }, quest.description), mode === "active" && quest.timerH && /*#__PURE__*/_react["default"].createElement("div", {
+  }, quest.description), mode === "active" && quest.timerH && /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "8px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       justifyContent: "space-between",
       marginBottom: "4px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: expired ? "#f87171" : "rgba(255,255,255,0.3)"
     }
-  }, expired ? "⚠ EXPIRÉE" : formatTime(remMs)), /*#__PURE__*/_react["default"].createElement("span", {
+  }, expired ? "⚠ EXPIRÉE" : formatTime(remMs)), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "rgba(255,255,255,0.2)"
     }
-  }, Math.round(pct), "%")), /*#__PURE__*/_react["default"].createElement(TimerBar, {
+  }, Math.round(pct), "%")), /*#__PURE__*/React.createElement(TimerBar, {
     pct: pct,
     color: accentColor
-  })), /*#__PURE__*/_react["default"].createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "5px",
       flexWrap: "wrap"
     }
-  }, quest.duration && /*#__PURE__*/_react["default"].createElement(Pill, null, "\u23F1 ", quest.duration), (_quest$tags = quest.tags) === null || _quest$tags === void 0 ? void 0 : _quest$tags.map(function (t) {
-    return /*#__PURE__*/_react["default"].createElement(Pill, {
+  }, quest.duration && /*#__PURE__*/React.createElement(Pill, null, "\u23F1 ", quest.duration), (_quest$tags = quest.tags) === null || _quest$tags === void 0 ? void 0 : _quest$tags.map(function (t) {
+    return /*#__PURE__*/React.createElement(Pill, {
       key: t
     }, "#", t);
-  }), quest.personal && /*#__PURE__*/_react["default"].createElement(Pill, null, "\u2726 personnel"), quest.steps && /*#__PURE__*/_react["default"].createElement(Pill, null, "\uD83D\uDCCB ", quest.steps.length, " \xE9tapes")), quest.steps && /*#__PURE__*/_react["default"].createElement("div", {
+  }), quest.personal && /*#__PURE__*/React.createElement(Pill, null, "\u2726 personnel"), quest.steps && /*#__PURE__*/React.createElement(Pill, null, "\uD83D\uDCCB ", quest.steps.length, " \xE9tapes")), quest.steps && /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: "12px",
       borderTop: "1px solid rgba(255,255,255,0.06)",
@@ -2009,14 +2003,14 @@ function QuestCard(_ref8) {
       gap: "6px"
     }
   }, quest.steps.map(function (step, i) {
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: i,
       style: {
         display: "flex",
         gap: "8px",
         alignItems: "flex-start"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "9px",
         fontFamily: "'Space Mono',monospace",
@@ -2028,7 +2022,7 @@ function QuestCard(_ref8) {
         flexShrink: 0,
         marginTop: "2px"
       }
-    }, i + 1), /*#__PURE__*/_react["default"].createElement("span", {
+    }, i + 1), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "12px",
         color: "rgba(240,237,232,0.5)",
@@ -2050,7 +2044,7 @@ function ItemModal(_ref9) {
   var usable = inventory.filter(function (i) {
     return ["extend", "shield", "remove", "instant_daily", "freeze"].includes(i.effect);
   });
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       position: "fixed",
       inset: 0,
@@ -2062,7 +2056,7 @@ function ItemModal(_ref9) {
       padding: "20px"
     },
     onClick: onClose
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     onClick: function onClick(e) {
       return e.stopPropagation();
     },
@@ -2074,7 +2068,7 @@ function ItemModal(_ref9) {
       maxWidth: "400px",
       width: "100%"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -2082,7 +2076,7 @@ function ItemModal(_ref9) {
       color: "rgba(255,255,255,0.3)",
       marginBottom: "16px"
     }
-  }, "UTILISER UN ITEM SUR"), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "UTILISER UN ITEM SUR"), /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: "15px",
       fontWeight: 600,
@@ -2090,20 +2084,20 @@ function ItemModal(_ref9) {
       marginBottom: "20px",
       fontFamily: "'Crimson Pro',Georgia,serif"
     }
-  }, quest.title), usable.length === 0 ? /*#__PURE__*/_react["default"].createElement("p", {
+  }, quest.title), usable.length === 0 ? /*#__PURE__*/React.createElement("p", {
     style: {
       color: "rgba(255,255,255,0.3)",
       fontSize: "13px",
       fontFamily: "'Crimson Pro',Georgia,serif"
     }
-  }, "Aucun item utilisable sur cette qu\xEAte.") : /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Aucun item utilisable sur cette qu\xEAte.") : /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
       gap: "8px"
     }
   }, usable.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: item.uid,
       onClick: function onClick() {
         return onUse(item, quest);
@@ -2119,28 +2113,28 @@ function ItemModal(_ref9) {
         alignItems: "center",
         gap: "10px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "20px"
       }
-    }, item.icon), /*#__PURE__*/_react["default"].createElement("div", {
+    }, item.icon), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "13px",
         fontWeight: 600,
         color: RARITY_COLOR[item.rarity]
       }
-    }, item.name), /*#__PURE__*/_react["default"].createElement("div", {
+    }, item.name), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "11px",
         color: "rgba(255,255,255,0.4)",
         fontFamily: "'Space Mono',monospace"
       }
     }, item.desc)));
-  })), /*#__PURE__*/_react["default"].createElement(Btn, {
+  })), /*#__PURE__*/React.createElement(Btn, {
     variant: "ghost",
     onClick: onClose,
     style: {
@@ -2154,16 +2148,16 @@ function ItemModal(_ref9) {
 // ═══════════════════════════════════════
 // MAIN APP
 // ═══════════════════════════════════════
-function App() {
-  var _useState3 = (0, _react.useState)("active"),
+export default function App() {
+  var _useState3 = useState("active"),
     _useState4 = _slicedToArray(_useState3, 2),
     view = _useState4[0],
     setView = _useState4[1];
-  var _useState5 = (0, _react.useState)(null),
+  var _useState5 = useState(null),
     _useState6 = _slicedToArray(_useState5, 2),
     aiQuests = _useState6[0],
     setAiQuests = _useState6[1];
-  var _useState7 = (0, _react.useState)({
+  var _useState7 = useState({
       daily: null,
       weekly: null,
       monthly: null,
@@ -2173,67 +2167,67 @@ function App() {
     _useState8 = _slicedToArray(_useState7, 2),
     selections = _useState8[0],
     setSel = _useState8[1];
-  var _useState9 = (0, _react.useState)([]),
+  var _useState9 = useState([]),
     _useState0 = _slicedToArray(_useState9, 2),
     active = _useState0[0],
     setActive = _useState0[1];
-  var _useState1 = (0, _react.useState)([]),
+  var _useState1 = useState([]),
     _useState10 = _slicedToArray(_useState1, 2),
     history = _useState10[0],
     setHistory = _useState10[1];
-  var _useState11 = (0, _react.useState)(0),
+  var _useState11 = useState(0),
     _useState12 = _slicedToArray(_useState11, 2),
     totalXP = _useState12[0],
     setTotalXP = _useState12[1];
-  var _useState13 = (0, _react.useState)([]),
+  var _useState13 = useState([]),
     _useState14 = _slicedToArray(_useState13, 2),
     inventory = _useState14[0],
     setInventory = _useState14[1];
-  var _useState15 = (0, _react.useState)(false),
+  var _useState15 = useState(false),
     _useState16 = _slicedToArray(_useState15, 2),
     shieldActive = _useState16[0],
     setShieldActive = _useState16[1];
-  var _useState17 = (0, _react.useState)(false),
+  var _useState17 = useState(false),
     _useState18 = _slicedToArray(_useState17, 2),
     doubleXPNext = _useState18[0],
     setDoubleXPNext = _useState18[1];
-  var _useState19 = (0, _react.useState)(null),
+  var _useState19 = useState(null),
     _useState20 = _slicedToArray(_useState19, 2),
     freezeUntil = _useState20[0],
     setFreezeUntil = _useState20[1];
-  var _useState21 = (0, _react.useState)([]),
+  var _useState21 = useState([]),
     _useState22 = _slicedToArray(_useState21, 2),
     earnedDofus = _useState22[0],
     setEarnedDofus = _useState22[1];
-  var _useState23 = (0, _react.useState)([]),
+  var _useState23 = useState([]),
     _useState24 = _slicedToArray(_useState23, 2),
     completedDofusQuests = _useState24[0],
     setCompletedDofusQuests = _useState24[1];
-  var _useState25 = (0, _react.useState)([]),
+  var _useState25 = useState([]),
     _useState26 = _slicedToArray(_useState25, 2),
     activeDofusQuests = _useState26[0],
     setActiveDofusQuests = _useState26[1];
-  var _useState27 = (0, _react.useState)(false),
+  var _useState27 = useState(false),
     _useState28 = _slicedToArray(_useState27, 2),
     loading = _useState28[0],
     setLoading = _useState28[1];
-  var _useState29 = (0, _react.useState)(null),
+  var _useState29 = useState(null),
     _useState30 = _slicedToArray(_useState29, 2),
     error = _useState30[0],
     setError = _useState30[1];
-  var _useState31 = (0, _react.useState)(false),
+  var _useState31 = useState(false),
     _useState32 = _slicedToArray(_useState31, 2),
     ready = _useState32[0],
     setReady = _useState32[1];
-  var _useState33 = (0, _react.useState)([]),
+  var _useState33 = useState([]),
     _useState34 = _slicedToArray(_useState33, 2),
     notifs = _useState34[0],
     setNotifs = _useState34[1];
-  var _useState35 = (0, _react.useState)(null),
+  var _useState35 = useState(null),
     _useState36 = _slicedToArray(_useState35, 2),
     itemModal = _useState36[0],
     setItemModal = _useState36[1];
-  var _useState37 = (0, _react.useState)({
+  var _useState37 = useState({
       title: "",
       description: "",
       type: "Personnel",
@@ -2244,19 +2238,19 @@ function App() {
     _useState38 = _slicedToArray(_useState37, 2),
     pForm = _useState38[0],
     setPForm = _useState38[1];
-  var _useState39 = (0, _react.useState)(false),
+  var _useState39 = useState(false),
     _useState40 = _slicedToArray(_useState39, 2),
     extraChoice = _useState40[0],
     setExtraChoice = _useState40[1];
-  var _useState41 = (0, _react.useState)(0),
+  var _useState41 = useState(0),
     _useState42 = _slicedToArray(_useState41, 2),
     weeklyRerolls = _useState42[0],
     setWeeklyRerolls = _useState42[1];
-  var _useState43 = (0, _react.useState)(Date.now()),
+  var _useState43 = useState(Date.now()),
     _useState44 = _slicedToArray(_useState43, 2),
     now = _useState44[0],
     setNow = _useState44[1];
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     var t = setInterval(function () {
       return setNow(Date.now());
     }, 30000);
@@ -2266,7 +2260,7 @@ function App() {
   }, []);
 
   // Load
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     loadState().then(function (s) {
       if (s) {
         setActive(s.active || []);
@@ -2287,7 +2281,7 @@ function App() {
   }, []);
 
   // Save
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     if (!ready) return;
     saveState({
       active: active,
@@ -2314,7 +2308,7 @@ function App() {
   var isFrozen = freezeUntil && Date.now() < freezeUntil;
 
   // Stats for Dofus progress
-  var stats = (0, _react.useCallback)(function () {
+  var stats = useCallback(function () {
     var all = [].concat(_toConsumableArray(history), _toConsumableArray(activeDofusQuests.filter(function (q) {
       return q.completedOn;
     })));
@@ -2434,7 +2428,7 @@ function App() {
   }
 
   // Check for newly unlocked Dofus quests
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     if (!ready) return;
     var s = stats();
     var newDQ = [];
@@ -2478,7 +2472,7 @@ function App() {
   }, [history.length, totalXP]);
 
   // Expire check
-  (0, _react.useEffect)(function () {
+  useEffect(function () {
     if (!ready) return;
     var expired = active.filter(function (item) {
       if (!item.timerH || isFrozen) return false;
@@ -2824,7 +2818,7 @@ function App() {
     display: "block",
     marginBottom: "6px"
   };
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: "100vh",
       background: "#080b0f",
@@ -2832,7 +2826,7 @@ function App() {
       fontFamily: "'Crimson Pro',Georgia,serif",
       padding: "28px 14px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("style", null, "@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');\n    *{box-sizing:border-box}input,textarea,select{outline:none;font-family:'Crimson Pro',Georgia,serif}\n    ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:2px}\n    @keyframes slideIn{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}"), /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("style", null, "@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');\n    *{box-sizing:border-box}input,textarea,select{outline:none;font-family:'Crimson Pro',Georgia,serif}\n    ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:2px}\n    @keyframes slideIn{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}"), /*#__PURE__*/React.createElement("div", {
     style: {
       position: "fixed",
       top: 20,
@@ -2843,26 +2837,26 @@ function App() {
       gap: "8px"
     }
   }, notifs.map(function (n) {
-    return /*#__PURE__*/_react["default"].createElement(Notif, {
+    return /*#__PURE__*/React.createElement(Notif, {
       key: n.id,
       notif: n,
       onDismiss: function onDismiss() {
         return dismissNotif(n.id);
       }
     });
-  })), itemModal && /*#__PURE__*/_react["default"].createElement(ItemModal, {
+  })), itemModal && /*#__PURE__*/React.createElement(ItemModal, {
     quest: itemModal,
     inventory: inventory,
     onUse: useItem,
     onClose: function onClose() {
       return setItemModal(null);
     }
-  }), /*#__PURE__*/_react["default"].createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     style: {
       maxWidth: "960px",
       margin: "0 auto"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "20px",
       display: "flex",
@@ -2871,7 +2865,7 @@ function App() {
       flexWrap: "wrap",
       gap: "12px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -2879,14 +2873,14 @@ function App() {
       color: "rgba(255,255,255,0.18)",
       marginBottom: "6px"
     }
-  }, "JOURNAL DE QU\xCATES \xB7 ", PROFILE.name.toUpperCase()), /*#__PURE__*/_react["default"].createElement("h1", {
+  }, "JOURNAL DE QU\xCATES \xB7 ", PROFILE.name.toUpperCase()), /*#__PURE__*/React.createElement("h1", {
     style: {
       fontSize: "clamp(22px,4vw,36px)",
       fontWeight: 600,
       margin: 0,
       letterSpacing: "-0.5px"
     }
-  }, "Qu\xEAtes secondaires")), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Qu\xEAtes secondaires")), /*#__PURE__*/React.createElement("div", {
     style: {
       background: "rgba(255,255,255,0.03)",
       border: "1px solid rgba(255,255,255,0.08)",
@@ -2894,61 +2888,61 @@ function App() {
       padding: "12px 18px",
       minWidth: "180px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       alignItems: "baseline",
       gap: "8px",
       marginBottom: "6px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "22px",
       fontWeight: 700,
       color: "#facc15",
       fontFamily: "'Space Mono',monospace"
     }
-  }, "Niv.", playerLevel), /*#__PURE__*/_react["default"].createElement("span", {
+  }, "Niv.", playerLevel), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "11px",
       color: "rgba(255,255,255,0.3)",
       fontFamily: "'Space Mono',monospace"
     }
-  }, xpIn, "/", xpNeeded, " XP")), /*#__PURE__*/_react["default"].createElement(XPBar, {
+  }, xpIn, "/", xpNeeded, " XP")), /*#__PURE__*/React.createElement(XPBar, {
     xpIn: xpIn,
     xpNeeded: xpNeeded
-  }), /*#__PURE__*/_react["default"].createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "8px",
       marginTop: "8px",
       flexWrap: "wrap"
     }
-  }, shieldActive && /*#__PURE__*/_react["default"].createElement("span", {
+  }, shieldActive && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "#60a5fa"
     }
-  }, "\uD83D\uDEE1 \xC9gide"), doubleXPNext && /*#__PURE__*/_react["default"].createElement("span", {
+  }, "\uD83D\uDEE1 \xC9gide"), doubleXPNext && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "#facc15"
     }
-  }, "\u26A1 \xD72 XP"), isFrozen && /*#__PURE__*/_react["default"].createElement("span", {
+  }, "\u26A1 \xD72 XP"), isFrozen && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "#06b6d4"
     }
-  }, "\uD83C\uDF00 Gel\xE9"), earnedDofus.length > 0 && /*#__PURE__*/_react["default"].createElement("span", {
+  }, "\uD83C\uDF00 Gel\xE9"), earnedDofus.length > 0 && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "#22c55e"
     }
-  }, "\uD83E\uDD5A\xD7", earnedDofus.length)))), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "\uD83E\uDD5A\xD7", earnedDofus.length)))), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "5px",
@@ -2956,7 +2950,7 @@ function App() {
       marginBottom: "24px"
     }
   }, navItems.map(function (n) {
-    return /*#__PURE__*/_react["default"].createElement("button", {
+    return /*#__PURE__*/React.createElement("button", {
       key: n.id,
       onClick: function onClick() {
         return setView(n.id);
@@ -2977,7 +2971,7 @@ function App() {
         alignItems: "center",
         gap: "6px"
       }
-    }, n.label, n.badge ? /*#__PURE__*/_react["default"].createElement("span", {
+    }, n.label, n.badge ? /*#__PURE__*/React.createElement("span", {
       style: {
         background: "rgba(250,204,21,0.2)",
         color: "#facc15",
@@ -2986,22 +2980,22 @@ function App() {
         fontSize: "9px"
       }
     }, n.badge) : null);
-  })), view === "active" && /*#__PURE__*/_react["default"].createElement("div", null, activeDofusQuests.length > 0 && /*#__PURE__*/_react["default"].createElement("div", {
+  })), view === "active" && /*#__PURE__*/React.createElement("div", null, activeDofusQuests.length > 0 && /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "28px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       alignItems: "center",
       gap: "10px",
       marginBottom: "12px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "18px"
     }
-  }, "\uD83E\uDD5A"), /*#__PURE__*/_react["default"].createElement("span", {
+  }, "\uD83E\uDD5A"), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
@@ -3009,20 +3003,20 @@ function App() {
       color: "#fbbf24",
       fontWeight: 700
     }
-  }, "QU\xCATES DOFUS"), /*#__PURE__*/_react["default"].createElement("span", {
+  }, "QU\xCATES DOFUS"), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "10px",
       fontFamily: "'Space Mono',monospace",
       color: "rgba(255,255,255,0.25)"
     }
-  }, "Incontournables")), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Incontournables")), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
       gap: "8px"
     }
   }, activeDofusQuests.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement(QuestCard, {
+    return /*#__PURE__*/React.createElement(QuestCard, {
       key: item.id,
       quest: _objectSpread(_objectSpread({}, item.quest), {}, {
         level: "dofus",
@@ -3038,7 +3032,7 @@ function App() {
       onUseItem: function onUseItem() {},
       inventory: inventory
     });
-  }))), active.length === 0 && activeDofusQuests.length === 0 ? /*#__PURE__*/_react["default"].createElement("div", {
+  }))), active.length === 0 && activeDofusQuests.length === 0 ? /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: "center",
       padding: "50px 20px",
@@ -3048,7 +3042,7 @@ function App() {
       fontSize: "12px",
       fontFamily: "'Space Mono',monospace"
     }
-  }, "Aucune qu\xEAte active.", /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("span", {
+  }, "Aucune qu\xEAte active.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "11px"
     }
@@ -3062,23 +3056,23 @@ function App() {
       cfg = _ref13[1];
     var items = groupedActive[level];
     if (!items || !items.length) return null;
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: level,
       style: {
         marginBottom: "28px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         alignItems: "center",
         gap: "10px",
         marginBottom: "10px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: level === "legendary" ? "20px" : "17px"
       }
-    }, cfg.emoji), /*#__PURE__*/_react["default"].createElement("span", {
+    }, cfg.emoji), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
@@ -3086,20 +3080,20 @@ function App() {
         color: cfg.color,
         fontWeight: 700
       }
-    }, cfg.label), /*#__PURE__*/_react["default"].createElement("span", {
+    }, cfg.label), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: "rgba(255,255,255,0.25)"
       }
-    }, cfg.subtitle)), /*#__PURE__*/_react["default"].createElement("div", {
+    }, cfg.subtitle)), /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         flexDirection: "column",
         gap: "8px"
       }
     }, items.map(function (item) {
-      return /*#__PURE__*/_react["default"].createElement(QuestCard, {
+      return /*#__PURE__*/React.createElement(QuestCard, {
         key: item.id,
         quest: _objectSpread(_objectSpread({}, item.quest), {}, {
           level: level,
@@ -3124,7 +3118,7 @@ function App() {
         }
       });
     })));
-  })), view === "generate" && /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("div", {
+  })), view === "generate" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "10px",
@@ -3132,21 +3126,21 @@ function App() {
       marginBottom: "20px",
       flexWrap: "wrap"
     }
-  }, /*#__PURE__*/_react["default"].createElement(Btn, {
+  }, /*#__PURE__*/React.createElement(Btn, {
     onClick: generate,
     disabled: loading
   }, loading ? "GÉNÉRATION..." : aiQuests ? "↻ RÉGÉNÉRER" : "▶ GÉNÉRER"), aiQuests && Object.values(selections).some(function (v) {
     return v !== null;
-  }) && /*#__PURE__*/_react["default"].createElement(Btn, {
+  }) && /*#__PURE__*/React.createElement(Btn, {
     variant: "success",
     onClick: confirmAi
-  }, "\u2713 AJOUTER LES S\xC9LECTIONN\xC9ES"), error && /*#__PURE__*/_react["default"].createElement("span", {
+  }, "\u2713 AJOUTER LES S\xC9LECTIONN\xC9ES"), error && /*#__PURE__*/React.createElement("span", {
     style: {
       fontSize: "11px",
       color: "#f87171",
       fontFamily: "'Space Mono',monospace"
     }
-  }, error)), !aiQuests && !loading && /*#__PURE__*/_react["default"].createElement("div", {
+  }, error)), !aiQuests && !loading && /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: "center",
       padding: "40px 20px",
@@ -3161,7 +3155,7 @@ function App() {
     return active.some(function (q) {
       return q.level === l;
     });
-  }).length > 0 && /*#__PURE__*/_react["default"].createElement("div", {
+  }).length > 0 && /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "12px",
       color: "rgba(251,146,60,0.6)",
@@ -3173,19 +3167,19 @@ function App() {
     });
   }).map(function (l) {
     return LEVEL_CFG[l].label;
-  }).join(", ")), /*#__PURE__*/_react["default"].createElement("div", null, "Pool vari\xE9 \xB7 G\xE9n\xE9ration al\xE9atoire")), loading && /*#__PURE__*/_react["default"].createElement("div", {
+  }).join(", ")), /*#__PURE__*/React.createElement("div", null, "Pool vari\xE9 \xB7 G\xE9n\xE9ration al\xE9atoire")), loading && /*#__PURE__*/React.createElement("div", {
     style: {
       opacity: 0.3
     }
   }, Object.keys(LEVEL_CFG).filter(function (l) {
     return l !== "dofus";
   }).map(function (l) {
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: l,
       style: {
         marginBottom: "24px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         height: "10px",
         width: "100px",
@@ -3193,14 +3187,14 @@ function App() {
         borderRadius: "3px",
         marginBottom: "10px"
       }
-    }), /*#__PURE__*/_react["default"].createElement("div", {
+    }), /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         gap: "8px",
         flexWrap: "wrap"
       }
     }, Array(l === "legendary" ? 5 : 3).fill(0).map(function (_, i) {
-      return /*#__PURE__*/_react["default"].createElement("div", {
+      return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
           flex: "1 1 200px",
@@ -3221,29 +3215,29 @@ function App() {
       cfg = _ref17[1];
     if (!aiQuests[level]) return null;
     var isLegend = level === "legendary";
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: level,
       style: {
         marginBottom: "32px"
       }
-    }, isLegend && /*#__PURE__*/_react["default"].createElement("div", {
+    }, isLegend && /*#__PURE__*/React.createElement("div", {
       style: {
         height: "1px",
         background: "linear-gradient(90deg,rgba(232,121,249,0.3),transparent)",
         marginBottom: "20px"
       }
-    }), /*#__PURE__*/_react["default"].createElement("div", {
+    }), /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         alignItems: "center",
         gap: "10px",
         marginBottom: "12px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: isLegend ? "20px" : "17px"
       }
-    }, cfg.emoji), /*#__PURE__*/_react["default"].createElement("span", {
+    }, cfg.emoji), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
@@ -3251,26 +3245,26 @@ function App() {
         color: cfg.color,
         fontWeight: 700
       }
-    }, cfg.label), /*#__PURE__*/_react["default"].createElement("span", {
+    }, cfg.label), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: "rgba(255,255,255,0.25)"
       }
-    }, cfg.subtitle)), /*#__PURE__*/_react["default"].createElement("div", {
+    }, cfg.subtitle)), /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         gap: "8px",
         flexWrap: "wrap"
       }
     }, aiQuests[level].map(function (q, i) {
-      return /*#__PURE__*/_react["default"].createElement("div", {
+      return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
           flex: "1 1 220px",
           minWidth: "180px"
         }
-      }, /*#__PURE__*/_react["default"].createElement(QuestCard, {
+      }, /*#__PURE__*/React.createElement(QuestCard, {
         quest: _objectSpread(_objectSpread({}, q), {}, {
           isZC: q.isZC || false
         }),
@@ -3283,24 +3277,24 @@ function App() {
         }
       }));
     })));
-  })), view === "add" && /*#__PURE__*/_react["default"].createElement("div", {
+  })), view === "add" && /*#__PURE__*/React.createElement("div", {
     style: {
       maxWidth: "500px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("h2", {
+  }, /*#__PURE__*/React.createElement("h2", {
     style: {
       fontSize: "20px",
       fontWeight: 600,
       marginBottom: "20px",
       marginTop: 0
     }
-  }, "Qu\xEAte personnelle"), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Qu\xEAte personnelle"), /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "14px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/React.createElement("label", {
     style: labelSt
-  }, "TITRE *"), /*#__PURE__*/_react["default"].createElement("input", {
+  }, "TITRE *"), /*#__PURE__*/React.createElement("input", {
     value: pForm.title,
     onChange: function onChange(e) {
       return setPForm(function (p) {
@@ -3311,13 +3305,13 @@ function App() {
     },
     placeholder: "ex : Finir le livre II de l'\xC9thique",
     style: inputSt
-  })), /*#__PURE__*/_react["default"].createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "14px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/React.createElement("label", {
     style: labelSt
-  }, "DESCRIPTION"), /*#__PURE__*/_react["default"].createElement("textarea", {
+  }, "DESCRIPTION"), /*#__PURE__*/React.createElement("textarea", {
     value: pForm.description,
     onChange: function onChange(e) {
       return setPForm(function (p) {
@@ -3331,20 +3325,20 @@ function App() {
     style: _objectSpread(_objectSpread({}, inputSt), {}, {
       resize: "vertical"
     })
-  })), /*#__PURE__*/_react["default"].createElement("div", {
+  })), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "10px",
       flexWrap: "wrap",
       marginBottom: "14px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
       flex: "1 1 160px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/React.createElement("label", {
     style: labelSt
-  }, "NIVEAU"), /*#__PURE__*/_react["default"].createElement("select", {
+  }, "NIVEAU"), /*#__PURE__*/React.createElement("select", {
     value: pForm.level,
     onChange: function onChange(e) {
       return setPForm(function (p) {
@@ -3364,17 +3358,17 @@ function App() {
     var _ref21 = _slicedToArray(_ref20, 2),
       v = _ref21[0],
       c = _ref21[1];
-    return /*#__PURE__*/_react["default"].createElement("option", {
+    return /*#__PURE__*/React.createElement("option", {
       key: v,
       value: v
     }, c.label);
-  }))), /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     style: {
       flex: "1 1 160px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/React.createElement("label", {
     style: labelSt
-  }, "TYPE"), /*#__PURE__*/_react["default"].createElement("select", {
+  }, "TYPE"), /*#__PURE__*/React.createElement("select", {
     value: pForm.type,
     onChange: function onChange(e) {
       return setPForm(function (p) {
@@ -3387,17 +3381,17 @@ function App() {
       background: "#0f1117"
     })
   }, Object.keys(TYPE_META).map(function (v) {
-    return /*#__PURE__*/_react["default"].createElement("option", {
+    return /*#__PURE__*/React.createElement("option", {
       key: v,
       value: v
     }, v);
-  }))), /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     style: {
       flex: "1 1 130px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/React.createElement("label", {
     style: labelSt
-  }, "DUR\xC9E"), /*#__PURE__*/_react["default"].createElement("input", {
+  }, "DUR\xC9E"), /*#__PURE__*/React.createElement("input", {
     value: pForm.duration,
     onChange: function onChange(e) {
       return setPForm(function (p) {
@@ -3408,14 +3402,14 @@ function App() {
     },
     placeholder: "ex : 2h",
     style: inputSt
-  }))), /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: "20px",
       display: "flex",
       alignItems: "center",
       gap: "10px"
     }
-  }, /*#__PURE__*/_react["default"].createElement("input", {
+  }, /*#__PURE__*/React.createElement("input", {
     type: "checkbox",
     checked: pForm.isZC,
     onChange: function onChange(e) {
@@ -3431,7 +3425,7 @@ function App() {
       height: "16px",
       cursor: "pointer"
     }
-  }), /*#__PURE__*/_react["default"].createElement("label", {
+  }), /*#__PURE__*/React.createElement("label", {
     htmlFor: "iszc",
     style: _defineProperty(_defineProperty({
       fontSize: "13px",
@@ -3439,17 +3433,17 @@ function App() {
       cursor: "pointer",
       fontFamily: "'Space Mono',monospace"
     }, "fontSize", "10px"), "letterSpacing", "1px")
-  }, "Qu\xEAte hors zone de confort (+XP bonus)")), /*#__PURE__*/_react["default"].createElement(Btn, {
+  }, "Qu\xEAte hors zone de confort (+XP bonus)")), /*#__PURE__*/React.createElement(Btn, {
     onClick: addPersonal,
     disabled: !pForm.title.trim()
-  }, "\u2726 AJOUTER")), view === "dofus" && /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h2", {
+  }, "\u2726 AJOUTER")), view === "dofus" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
     style: {
       fontSize: "20px",
       fontWeight: 600,
       marginBottom: "20px",
       marginTop: 0
     }
-  }, "Panth\xE9on des Dofus \u2014 ", earnedDofus.length, "/9"), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Panth\xE9on des Dofus \u2014 ", earnedDofus.length, "/9"), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
@@ -3464,7 +3458,7 @@ function App() {
       return qid.startsWith(id);
     }).length;
     var totalSQ = d.quests.length;
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: id,
       style: {
         background: unlocked ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.02)",
@@ -3473,22 +3467,22 @@ function App() {
         padding: "18px",
         boxShadow: unlocked ? "0 4px 20px ".concat(d.glow) : "none"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         alignItems: "flex-start",
         gap: "14px"
       }
-    }, /*#__PURE__*/_react["default"].createElement(DofusBadge, {
+    }, /*#__PURE__*/React.createElement(DofusBadge, {
       dofus: id,
       size: 50,
       unlocked: unlocked
-    }), /*#__PURE__*/_react["default"].createElement("div", {
+    }), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1,
         minWidth: 0
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         alignItems: "center",
@@ -3496,14 +3490,14 @@ function App() {
         marginBottom: "4px",
         flexWrap: "wrap"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "16px",
         fontWeight: 600,
         color: unlocked ? d.color : "rgba(255,255,255,0.5)",
         fontFamily: "'Crimson Pro',Georgia,serif"
       }
-    }, d.name), unlocked && /*#__PURE__*/_react["default"].createElement("span", {
+    }, d.name), unlocked && /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
@@ -3512,7 +3506,7 @@ function App() {
         padding: "2px 7px",
         borderRadius: "4px"
       }
-    }, "OBTENU")), /*#__PURE__*/_react["default"].createElement("div", {
+    }, "OBTENU")), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "11px",
         fontFamily: "'Space Mono',monospace",
@@ -3521,7 +3515,7 @@ function App() {
         marginBottom: "6px",
         opacity: 0.8
       }
-    }, d.arc), /*#__PURE__*/_react["default"].createElement("p", {
+    }, d.arc), /*#__PURE__*/React.createElement("p", {
       style: {
         fontSize: "12px",
         color: "rgba(255,255,255,0.45)",
@@ -3529,47 +3523,47 @@ function App() {
         lineHeight: 1.5,
         fontFamily: "'Crimson Pro',Georgia,serif"
       }
-    }, d.desc), /*#__PURE__*/_react["default"].createElement("div", {
+    }, d.desc), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "11px",
         color: "rgba(255,255,255,0.3)",
         fontFamily: "'Space Mono',monospace",
         marginBottom: "10px"
       }
-    }, "Bonus : ", /*#__PURE__*/_react["default"].createElement("span", {
+    }, "Bonus : ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: unlocked ? d.color : "rgba(255,255,255,0.4)"
       }
-    }, d.bonus)), /*#__PURE__*/_react["default"].createElement("div", {
+    }, d.bonus)), /*#__PURE__*/React.createElement("div", {
       style: {
         marginBottom: "6px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         justifyContent: "space-between",
         marginBottom: "4px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: "rgba(255,255,255,0.3)"
       }
-    }, "Progression pr\xE9requis"), /*#__PURE__*/_react["default"].createElement("span", {
+    }, "Progression pr\xE9requis"), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: d.color
       }
-    }, pct, "%")), /*#__PURE__*/_react["default"].createElement("div", {
+    }, pct, "%")), /*#__PURE__*/React.createElement("div", {
       style: {
         width: "100%",
         height: "3px",
         background: "rgba(255,255,255,0.06)",
         borderRadius: "2px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         width: "".concat(pct, "%"),
         height: "100%",
@@ -3577,13 +3571,13 @@ function App() {
         borderRadius: "2px",
         transition: "width 0.5s ease"
       }
-    }))), /*#__PURE__*/_react["default"].createElement("div", {
+    }))), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: "rgba(255,255,255,0.25)"
       }
-    }, "Qu\xEAtes d'arc : ", completedSQ, "/", totalSQ), /*#__PURE__*/_react["default"].createElement("div", {
+    }, "Qu\xEAtes d'arc : ", completedSQ, "/", totalSQ), /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         gap: "8px",
@@ -3601,7 +3595,7 @@ function App() {
         v = _ref26[1];
       var got = Math.min(s[k] || 0, v);
       var done = got >= v;
-      return /*#__PURE__*/_react["default"].createElement("span", {
+      return /*#__PURE__*/React.createElement("span", {
         key: k,
         style: {
           fontSize: "9px",
@@ -3614,21 +3608,21 @@ function App() {
         }
       }, k === "outZC" ? "hors ZC" : k, " ", got, "/", v);
     })))));
-  }))), view === "inventory" && /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h2", {
+  }))), view === "inventory" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
     style: {
       fontSize: "20px",
       fontWeight: 600,
       marginBottom: "6px",
       marginTop: 0
     }
-  }, "Inventaire \u2014 ", inventory.length, "/20"), /*#__PURE__*/_react["default"].createElement("p", {
+  }, "Inventaire \u2014 ", inventory.length, "/20"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: "12px",
       color: "rgba(255,255,255,0.3)",
       fontFamily: "'Space Mono',monospace",
       marginBottom: "20px"
     }
-  }, "Clique sur un item pour l'utiliser globalement (\xC9gide, \xC9tincelle, G\xE8le...). Pour les items de qu\xEAte, utilise le \uD83C\uDF92 sur la qu\xEAte."), inventory.length === 0 ? /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Clique sur un item pour l'utiliser globalement (\xC9gide, \xC9tincelle, G\xE8le...). Pour les items de qu\xEAte, utilise le \uD83C\uDF92 sur la qu\xEAte."), inventory.length === 0 ? /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: "center",
       padding: "50px 20px",
@@ -3638,14 +3632,14 @@ function App() {
       fontSize: "11px",
       fontFamily: "'Space Mono',monospace"
     }
-  }, "Inventaire vide. Accomplis des qu\xEAtes pour obtenir des items.") : /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Inventaire vide. Accomplis des qu\xEAtes pour obtenir des items.") : /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexWrap: "wrap",
       gap: "10px"
     }
   }, inventory.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: item.uid,
       onClick: function onClick() {
         return useGlobalItem(item);
@@ -3661,26 +3655,26 @@ function App() {
         minWidth: "160px",
         maxWidth: "220px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "24px",
         marginBottom: "8px"
       }
-    }, item.icon), /*#__PURE__*/_react["default"].createElement("div", {
+    }, item.icon), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "13px",
         fontWeight: 600,
         color: RARITY_COLOR[item.rarity],
         marginBottom: "4px"
       }
-    }, item.name), /*#__PURE__*/_react["default"].createElement("div", {
+    }, item.name), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "11px",
         color: "rgba(255,255,255,0.35)",
         lineHeight: 1.4,
         fontFamily: "'Space Mono',monospace"
       }
-    }, item.desc), /*#__PURE__*/_react["default"].createElement("div", {
+    }, item.desc), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "9px",
         marginTop: "8px",
@@ -3690,14 +3684,14 @@ function App() {
         opacity: 0.7
       }
     }, item.rarity.toUpperCase()));
-  }))), view === "history" && /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h2", {
+  }))), view === "history" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
     style: {
       fontSize: "20px",
       fontWeight: 600,
       marginBottom: "20px",
       marginTop: 0
     }
-  }, "Qu\xEAtes accomplies \u2014 ", history.length), history.length === 0 ? /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Qu\xEAtes accomplies \u2014 ", history.length), history.length === 0 ? /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: "center",
       padding: "50px 20px",
@@ -3707,7 +3701,7 @@ function App() {
       fontSize: "11px",
       fontFamily: "'Space Mono',monospace"
     }
-  }, "Aucune qu\xEAte accomplie pour l'instant.") : /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Aucune qu\xEAte accomplie pour l'instant.") : /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
@@ -3719,7 +3713,7 @@ function App() {
     var m = TYPE_META[(_item$quest = item.quest) === null || _item$quest === void 0 ? void 0 : _item$quest.type] || TYPE_META["Exploration"];
     var isLegend = item.level === "legendary";
     var isDQ = item.level === "dofus";
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       key: item.id,
       style: {
         background: "rgba(255,255,255,0.02)",
@@ -3730,18 +3724,18 @@ function App() {
         alignItems: "flex-start",
         gap: "12px"
       }
-    }, /*#__PURE__*/_react["default"].createElement("span", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "16px",
         flexShrink: 0,
         marginTop: "2px"
       }
-    }, cfg.emoji), /*#__PURE__*/_react["default"].createElement("div", {
+    }, cfg.emoji), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1,
         minWidth: 0
       }
-    }, /*#__PURE__*/_react["default"].createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         display: "flex",
         gap: "6px",
@@ -3749,31 +3743,31 @@ function App() {
         marginBottom: "3px",
         flexWrap: "wrap"
       }
-    }, /*#__PURE__*/_react["default"].createElement(Tag, {
+    }, /*#__PURE__*/React.createElement(Tag, {
       color: isDQ ? "#fbbf24" : isLegend ? "#e879f9" : m.color
-    }, (((_item$quest2 = item.quest) === null || _item$quest2 === void 0 ? void 0 : _item$quest2.type) || "").toUpperCase()), /*#__PURE__*/_react["default"].createElement("span", {
+    }, (((_item$quest2 = item.quest) === null || _item$quest2 === void 0 ? void 0 : _item$quest2.type) || "").toUpperCase()), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "10px",
         fontFamily: "'Space Mono',monospace",
         color: cfg.color,
         letterSpacing: "1px"
       }
-    }, cfg.label), item.isZC && /*#__PURE__*/_react["default"].createElement(Tag, {
+    }, cfg.label), item.isZC && /*#__PURE__*/React.createElement(Tag, {
       color: "#fb923c"
-    }, "HORS ZC")), /*#__PURE__*/_react["default"].createElement("div", {
+    }, "HORS ZC")), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "14px",
         fontWeight: 600,
         color: "#f0ede8",
         marginBottom: "2px"
       }
-    }, (_item$quest3 = item.quest) === null || _item$quest3 === void 0 ? void 0 : _item$quest3.title), /*#__PURE__*/_react["default"].createElement("div", {
+    }, (_item$quest3 = item.quest) === null || _item$quest3 === void 0 ? void 0 : _item$quest3.title), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: "10px",
         color: "rgba(255,255,255,0.25)",
         fontFamily: "'Space Mono',monospace"
       }
-    }, item.addedOn, " \u2192 ", item.completedOn)), /*#__PURE__*/_react["default"].createElement("span", {
+    }, item.addedOn, " \u2192 ", item.completedOn)), /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: "9px",
         fontFamily: "'Space Mono',monospace",
